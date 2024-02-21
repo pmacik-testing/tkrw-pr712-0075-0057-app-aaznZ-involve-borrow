@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-uxee
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0057-tenant/tkrw-pr712-0075-0057-app/devfile-sample-uxee@sha256:365c24ecc4d378b56077b2ad3d2842b55b062fd30857d1566c596a7dc9e88371
+        name: my-nodejs
+        resources: {}
+status: {}
